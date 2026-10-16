@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>RupeeRise Financial Services · Vadodara</title>
+<meta name="description" content="RupeeRise Financial Services, Vadodara. Pranav Shah, CFP® and NISM Certified Research Analyst. Free tools for mutual fund investors, portfolio reviews and financial education.">
+<meta property="og:title" content="RupeeRise Financial Services">
+<meta property="og:description" content="Free tools for mutual fund investors, portfolio reviews and financial education. Pranav Shah, CFP®, Vadodara.">
+<meta property="og:image" content="https://rupeeriseindia.github.io/assets/logo.jpg">
+<meta property="og:url" content="https://rupeeriseindia.github.io/">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Source+Sans+3:wght@400;600;700&display=swap">
+<style>
+:root{
+  --paper:#eef2f3; --panel:#ffffff; --ink:#1f2453; --text:#2a2f45; --muted:#5d6577; --line:#dbe2e6;
+  --teal:#1f8f87; --teal-ink:#ffffff; --plate:#c4cac3; --wa:#1f8f5a;
+  --display:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;
+  --body:"Source Sans 3","Segoe UI",system-ui,-apple-system,sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root{--paper:#10131d; --panel:#171b29; --ink:#e7eaf7; --text:#d3d7e6; --muted:#9aa1b6; --line:#2a3044; --teal:#3fb8ae; --teal-ink:#0b1a19; --wa:#3fb87e}
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--text);font-family:var(--body);font-size:17px;line-height:1.55}
+a{color:var(--teal)}
+h1,h2,h3{font-family:var(--display);color:var(--ink);margin:0;text-wrap:balance}
+.wrap{max-width:1040px;margin:0 auto;padding:20px 16px 40px}
+:focus-visible{outline:2px solid var(--teal);outline-offset:3px}
+
+.brand{display:flex;align-items:center;gap:10px;background:var(--plate);border-radius:12px;padding:8px 12px;width:max-content;max-width:100%}
+.brand img{display:block;height:52px;width:auto;border-radius:6px}
+.brand img.wm{height:44px}
+
+.hero{display:grid;grid-template-columns:1.25fr 1fr;gap:32px;align-items:center;padding:40px 0 28px}
+.eyebrow{font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;font-weight:700;color:var(--teal)}
+.hero h1{font-size:clamp(2rem,5vw,3.1rem);font-weight:800;line-height:1.08;margin:10px 0 14px}
+.hero p{color:var(--muted);margin:0 0 22px;max-width:36em}
+.cta{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 18px;border-radius:10px;font-weight:700;text-decoration:none;border:1.5px solid var(--teal);color:var(--teal);background:transparent}
+.btn.primary{background:var(--teal);color:var(--teal-ink)}
+.btn.wa{border-color:var(--wa);color:var(--wa)}
+
+.who{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:22px}
+.who h2{font-size:1.35rem}
+.who .role{color:var(--muted);margin:4px 0 14px}
+.who ul{margin:0;padding-left:18px}
+.who li{margin:4px 0}
+
+h2.sec{font-size:1.5rem;margin:36px 0 14px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:20px;display:flex;flex-direction:column}
+.card .tag{font-size:.74rem;letter-spacing:.08em;text-transform:uppercase;font-weight:700;color:var(--teal)}
+.card h3{font-size:1.2rem;margin:6px 0 8px}
+.card p{margin:0 0 14px;color:var(--muted)}
+.card .go{margin-top:auto;font-weight:700;text-decoration:none}
+.card.feature{grid-column:span 2;border:1.5px solid var(--teal)}
+.card.feature .points{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:4px 0 16px}
+.card.feature .points div{background:var(--paper);border-radius:10px;padding:10px 12px;font-size:.95rem}
+.card.feature .points b{display:block;color:var(--ink);font-family:var(--display);font-size:1.05rem}
+
+.contact{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:22px;display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:center;margin-top:36px}
+.contact dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:6px 14px}
+.contact dt{color:var(--muted);font-size:.9rem}
+.contact dd{margin:0;font-weight:600;overflow-wrap:anywhere}
+
+.disc{margin-top:28px;font-size:.88rem;color:var(--muted);border-top:1px solid var(--line);padding-top:16px}
+.foot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-top:10px}
+
+@media (max-width:820px){
+  .hero{grid-template-columns:1fr;padding-top:28px}
+  .grid{grid-template-columns:1fr}
+  .card.feature{grid-column:auto}
+  .card.feature .points{grid-template-columns:1fr}
+  .contact{grid-template-columns:1fr}
+  .brand img{height:42px}.brand img.wm{height:36px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="brand" aria-label="RupeeRise Financial Services">
+    <img src="assets/logo.jpg" alt="RupeeRise logo">
+    <img class="wm" src="assets/wordmark.png" alt="RupeeRise — Redefining Finance">
+  </div>
+
+  <section class="hero">
+    <div>
+      <div class="eyebrow">RupeeRise Financial Services · Vadodara</div>
+      <h1>Know what you really own. Know what it really costs.</h1>
+      <p>Free, evidence-based tools and plain-language education for Indian investors, built from official AMFI and fund-house data. No sign-up, and nothing you enter leaves your browser.</p>
+      <div class="cta">
+        <a class="btn primary" href="diagnostics/">Check my mutual funds — free</a>
+        <a class="btn wa" href="https://wa.me/917574881134?text=Hi%20RupeeRise%2C%20I%20would%20like%20to%20know%20more%20about%20a%20portfolio%20review." target="_blank" rel="noopener">WhatsApp us</a>
+      </div>
+    </div>
+    <aside class="who" aria-labelledby="h-who">
+      <h2 id="h-who">Pranav Shah</h2>
+      <div class="role">Founder, RupeeRise Financial Services</div>
+      <ul>
+        <li>Certified Financial Planner (CFP®)</li>
+        <li>NISM Certified Research Analyst</li>
+        <li>Focus: portfolio diagnostics, direct equities, commodities (gold, silver, copper), ETFs and global investing</li>
+      </ul>
+    </aside>
+  </section>
+
+  <h2 class="sec">Free tools</h2>
+  <div class="grid">
+    <article class="card feature">
+      <div class="tag">Live · updated monthly</div>
+      <h3>RupeeRise Portfolio Diagnostics</h3>
+      <p>Pick the mutual funds your SIPs go into. See how much they overlap, stock by stock, and what the Regular plan is costing you compared with Direct.</p>
+      <div class="points">
+        <div><b>Real overlap</b>From each fund house's latest monthly portfolio</div>
+        <div><b>Real cost</b>AMFI's official expense ratios, Regular vs Direct</div>
+        <div><b>Private</b>Runs in your browser; nothing is stored</div>
+      </div>
+      <a class="go" href="diagnostics/">Open Portfolio Diagnostics →</a>
+    </article>
+    <article class="card">
+      <div class="tag">Coming soon</div>
+      <h3>More investor tools</h3>
+      <p>New free tools will be added here. Follow on LinkedIn to hear first.</p>
+      <a class="go" href="https://www.linkedin.com/in/pranavshah-cfp-rupeerise" target="_blank" rel="noopener">Follow on LinkedIn →</a>
+    </article>
+  </div>
+
+  <h2 class="sec">How RupeeRise helps</h2>
+  <div class="grid">
+    <article class="card">
+      <div class="tag">For individuals</div>
+      <h3>Portfolio Review</h3>
+      <p>A detailed review of your mutual fund portfolio: stock and sector overlap, costs, risk ratios, and a plan matched to your goals.</p>
+      <a class="go" href="https://wa.me/917574881134?text=Hi%20RupeeRise%2C%20I%20would%20like%20a%20portfolio%20review." target="_blank" rel="noopener">Ask for a review →</a>
+    </article>
+    <article class="card">
+      <div class="tag">For companies</div>
+      <h3>Financial education sessions</h3>
+      <p>Practical sessions for employees on SIPs, fund overlap, costs and building long-term wealth.</p>
+      <a class="go" href="mailto:rupeerise2025@gmail.com?subject=Financial%20education%20session">Enquire by email →</a>
+    </article>
+    <article class="card">
+      <div class="tag">On LinkedIn</div>
+      <h3>The Unlearn Series</h3>
+      <p>Short posts that question common money habits and show the data behind them.</p>
+      <a class="go" href="https://www.linkedin.com/in/pranavshah-cfp-rupeerise" target="_blank" rel="noopener">Read the series →</a>
+    </article>
+  </div>
+
+  <section class="contact" aria-labelledby="h-contact">
+    <div>
+      <h2 id="h-contact" style="font-size:1.4rem">Talk to RupeeRise</h2>
+      <p style="color:var(--muted);margin:6px 0 14px">Based in Vadodara, Gujarat. Message, call or email.</p>
+      <a class="btn wa" href="https://wa.me/917574881134?text=Hi%20RupeeRise%2C%20I%20would%20like%20to%20know%20more." target="_blank" rel="noopener">WhatsApp +91 75748 81134</a>
+    </div>
+    <dl>
+      <dt>Phone</dt><dd><a href="tel:+917574881134">+91 75748 81134</a></dd>
+      <dt>Email</dt><dd><a href="mailto:rupeerise2025@gmail.com">rupeerise2025@gmail.com</a></dd>
+      <dt>LinkedIn</dt><dd><a href="https://www.linkedin.com/in/pranavshah-cfp-rupeerise" target="_blank" rel="noopener">pranavshah-cfp-rupeerise</a></dd>
+      <dt>City</dt><dd>Vadodara, Gujarat</dd>
+    </dl>
+  </section>
+
+  <div class="disc">
+    <p><b>For education only.</b> The tools and content on this site do not recommend buying, selling or holding any security or scheme and are not investment advice or research recommendations. Mutual fund investments are subject to market risks; read all scheme-related documents carefully.</p>
+    <div class="foot"><span><b>RupeeRise Financial Services</b> · Redefining Finance · Vadodara, Gujarat</span><span>© 2026 RupeeRise</span></div>
+  </div>
+</div>
+</body>
+</html>
